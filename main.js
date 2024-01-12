@@ -53,7 +53,7 @@ function animate() {
 
     // Add spinning animation
     if (model) {
-        model.rotation.y += 0.01; // Adjust the rotation speed as needed
+        model.rotation.y += 0.001; // Adjust the rotation speed as needed
     }
 
     renderer.render(scene, camera);
