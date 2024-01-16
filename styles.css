@@ -8,65 +8,26 @@
   src: url("assets/Hamburg-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "check";
+  src: url("assets/ActionCondensedRegular-Grade3-Trial.otf");
+}
+
+* {
+  font-family: medium;
+  color: whitesmoke;
+}
 
 body {
   background-color: #14142b;
+  height: 200vh;
 }
 
-.closeIcon {
-  display: none;
-}
 
 .logo {
-  width: 200px;
+  width: 400px;
 }
 
-.menuItem {
-  display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
-}
-
-.menuItem:hover {
-  text-decoration: underline;
-}
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: #5daa68;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  transform: translateY(-110%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: #14142b88;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-  font-family: medium;
-}
-
-.showMenu {
-  transform: translateY(0);
-}
 
 button {
   all: unset;
@@ -74,23 +35,84 @@ button {
   padding: 20px;
   color: white;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: medium;
   letter-spacing: 1.5px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 17px;
 }
 
-
+/* Important stuff below */
 .button {
-  background-color: #58cc02;
-  box-shadow: 0 5px 0 #58a700; 
+  background-color: #3f6844;
+  box-shadow: 0 5px 0 #395e3d; 
 }
 
 .button:active {
   box-shadow: none;
   transform: translateY(5px);
 }
+
+footer {
+  color: white;
+  position: fixed;
+  height: 100px;
+}
+
+.model {
+margin-left: 25vw;
+  border-radius: 12px;
+  z-index: -100;
+  position: relative;
+  margin-top: -20vh;
+}
+
+.heading {
+  z-index: 100;
+  margin-left: 50px;
+  margin-right: 150px;
+}
+
+.heading :nth-child(1) {
+  color: whitesmoke;
+  font-family: bold;
+  font-size: 100px;
+  z-index: 9;
+
+}
+
+
+.heading :nth-child(2) {
+  color: rgb(255, 255, 255);
+  font-family: check;
+  font-size: 200px;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+transform: rotate(-5deg);
+z-index: 10;
+position: relative;
+margin-top: -320px;
+margin-left: 100px;
+
+}
+
+.heading :nth-child(3) {
+  margin-top: -100px;
+}
+
+section :nth-child(1) {
+  font-family: bold;
+  font-size: 50px;
+  margin-left: 50px;
+}
+section :nth-child(2) {
+  font-family: medium;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: -50px;
+}
+
+
 
 
 
