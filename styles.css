@@ -17,6 +17,10 @@ body {
   display: none;
 }
 
+.logo {
+  width: 200px;
+}
+
 .menuItem {
   display: block;
   margin: 2rem 4rem;
@@ -63,9 +67,6 @@ body {
 .showMenu {
   transform: translateY(0);
 }
-
-
-
 
 button {
   all: unset;

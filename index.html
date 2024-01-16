@@ -8,10 +8,9 @@
 </head>
 
 <body>
-<script type="module" src="/main.js"></script>
 	<header>
 	<nav>
-		<a href="index.html"><img src="assets/logo.png" alt="Logo van Checkpoint"></a>
+		<a href="index.html"><img class='logo' src="assets/logo.svg" alt="Logo van Checkpoint"></a>
 		<ul class="menu">
 			<li><a class="menuItem" href="#">Mijn ervaring</a></li>
 			<li><a class="menuItem" href="#">Reviews</a></li>
@@ -24,7 +23,10 @@
 	</header>
 
 	<main>
-
+	<div class="3dmodel">
+		<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js"></script>
+		<spline-viewer hint loading-anim-type="spinner-small-dark" url="https://prod.spline.design/breSXW0c-BptuEW3/scene.splinecode"></spline-viewer>
+	</div>
 	</main>
 	
 	<footer>
