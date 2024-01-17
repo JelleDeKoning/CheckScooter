@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "check";
   src: url("assets/ActionCondensedRegular-Grade3-Trial.otf");
@@ -8,9 +6,7 @@
 
 
 * {
-  font-family: medium;
   color: whitesmoke;
-  
 }
 
 body {
@@ -43,7 +39,7 @@ button {
 
 .button {
   background-color: #3f6844;
-  box-shadow: 0 5px 0 #395e3d; 
+  box-shadow: 0 5px 0 #395e3d;
 }
 
 .button:active {
@@ -65,7 +61,7 @@ model-viewer {
 
 .heading {
   margin-top: 50vh;
-  mix-blend-mode:luminosity
+  mix-blend-mode: luminosity
 }
 
 
@@ -76,7 +72,7 @@ h1 {
   font-size: 70px;
   margin-left: 10vw;
   margin-bottom: 0px;
-  
+
 }
 
 h2 {
@@ -106,8 +102,8 @@ h2 {
   font-style: normal;
   font-size: 40px;
   margin-left: 10px;
-margin-bottom: 33.2px;
-margin-top: 33.2px;
+  margin-bottom: 33.2px;
+  margin-top: 33.2px;
 }
 
 .pijltje {
@@ -115,17 +111,19 @@ margin-top: 33.2px;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
-  animation: jumpInfinite 1.5s infinite;
-z-index: -200;
+  animation: jumpInfinite 1.5s infinite ease-in-out;
+  z-index: -200;
 }
 
 @keyframes jumpInfinite {
   0% {
-transform: translateY(0px)
+    transform: translateY(0px)
   }
+
   50% {
-    transform: translateY(-10px)
+    transform: translateY(-20px)
   }
+
   100% {
     transform: translateY(0px)
   }
@@ -142,7 +140,7 @@ h3 {
   font-size: 70px;
   margin-left: 10vw;
   margin-bottom: 0px;
-  
+
 }
 
 p {
@@ -157,15 +155,43 @@ p {
 
 .box {
 
-background: rgba(255, 255, 255, 0.27);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 5vh 3vh 1vh;
+  padding: 1vh 3vh;
+  height: auto;
+
 }
 
+.wit {
+  background-image: linear-gradient(104deg, #dedede, #f7f7f7);
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10vh;
+  
+}
+
+.container {
+  display: flex;
+ justify-content: center;
+ gap: 30vw;
+ padding-top: 10vh;
+}
+
+
+article {
+  width: 30vw;
+  height: 500px;
+  background-color: #152b3b;
+}
+
+article h4 {
+  font-family: "loos-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
 
