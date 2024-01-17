@@ -5,55 +5,105 @@
 	<meta charset="utf-8">
 	<title>Checkpoint</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/bno8uig.css">
 </head>
 
 <body>
 	<header>
-	<nav>
-		<a href="index.html"><img class='logo' src="assets/logo.svg" alt="Logo van Checkpoint"></a>
-		<!-- <ul class="menu">
+		<nav>
+			<a href="index.html"><img class='logo' src="assets/logo.svg" alt="Logo van Checkpoint"></a>
+			<!-- <ul class="menu">
 			<li><a class="menuItem" href="#">Mijn ervaring</a></li>
 			<li><a class="menuItem" href="#">Reviews</a></li>
 		  </ul> -->
-	</nav>
+		</nav>
 	</header>
 
 	<main>
-		<div class="heading">
-			<h1>Hoe duurzaam is </h1><h2>CHECK.</h2> 
-			<button class="button">Check het</button>
-		</div>
-	<div class="model">
-		<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js"></script>
-		<spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/breSXW0c-BptuEW3/scene.splinecode"></spline-viewer>
-	</div>
-	
-	<section>
-<h3>Wat is Check?</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus unde totam ab, qui ducimus similique quibusdam assumenda voluptatibus officia. Nostrum, mollitia a sed consequuntur itaque ex porro beatae repellendus iste?
-</p>
-	</section>
-
-	<div class="content">
-
-<div class="reviews">
-	<img src="" alt="">
 
 
+		<script type="module"
+			src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+			<model-viewer src="transformed_1705445341645.glb" ar
+				ar-modes="webxr scene-viewer quick-look"
+				camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+				disable-zoom tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate
+				camera-orbit="88.73deg 78.39deg 20m" field-of-view="50deg" max-camera-orbit="auto 97deg auto">
+				<div class="progress-bar hide" slot="progress-bar">
+					<div class="update-bar"></div>
+				</div>
+			</model-viewer>
+
+
+		<section class="heading">
+			<h1>CHECKPOINT</h1>
+			<div class="h2">
+				<h2>Hoe duurzaam is</h2>
+				<h2 class="check">CHECK.</h2>
+				<p>?</p>
+		</section>
+
+
+		<img class="pijltje" src="assets/Pijltje.svg" alt="Een pijltje naar beneden">
+
+<div class="box">
+<h3>WAT IS CHECK?</h3>
+<p>Check is een deelscooter bedrijf gevestigt in grote steden zoals Amsterdam. Door middel van hun app kan je scooters in de buurt zoeken en die huren voor een bepaalde tijd. De scooters van Check zijn volledig elekrtisch en het doel van Check is om volledig CO2 neutraal te worden.</p>
 </div>
 
-<div class="blog">
-
-	
-</div>
 
 
 
 
-	</div>
+
+
+		<!-- <section class="articles">
+			<article>
+			  <div class="article-wrapper">
+				<figure>
+				  <img src="https://picsum.photos/id/1011/800/450" alt="" />
+				</figure>
+				<div class="article-body">
+				  <h2>This is some title</h2>
+				  <p>
+					Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+				  </p>
+				  <a href="#" class="read-more">
+					Read more <span class="sr-only">about this is some title</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+					  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+					</svg>
+				  </a>
+				</div>
+			  </div>
+			</article>
+			<article>
+		  
+			  <div class="article-wrapper">
+				<figure>
+				  <img src="https://picsum.photos/id/1005/800/450" alt="" />
+				</figure>
+				<div class="article-body">
+				  <h2>This is some title</h2>
+				  <p>
+					Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+				  </p>
+				  <a href="#" class="read-more">
+					Read more <span class="sr-only">about this is some title</span>
+					
+					  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+					</svg>
+				  </a>
+				</div>
+			  </div>
+			</article>
+			<article> -->
+		
+
+
 
 	</main>
-	
+
 	<footer>
 
 	</footer>
