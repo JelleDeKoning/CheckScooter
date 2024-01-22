@@ -4,32 +4,51 @@
 
 * {
   color: whitesmoke;
+  max-width: 100%;
 }
-main {
-width: 100vw;
-height: 200vh;
+
+
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0px;
+  min-height: 100vh;
 }
 
 .een {
   background-image: url(assets/Achtergrond1.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.twee {
+  background-image: url(assets/achtergrond2.svg);
+  background-size:contain;
+  width: 375px;
+}
+
+.drie {
+background-color: #2e4337;
 }
 
 
 
 .logo {
-  width: 250px;
+  width: 20%;
   margin-top: 1vh;
-  margin-left: 10vw;
+  margin-left: 8.5vw;
   padding-left: 0px;
 }
 
 model-viewer {
   height: 50vh;
-  width: 50vw;
+  width: 100vw;
   z-index: -100;
   position: fixed;
-  margin-top: -1000px;
-  margin-left: 20vw;
+  margin-top: -300px;
+  top: 50%;
+  left: 10px;
 }
 
 
@@ -37,6 +56,62 @@ model-viewer {
 .heading {
   margin-top: 50vh;
 }
+
+.heading2 {
+  margin-left: 10vw;
+}
+
+.heading3 {
+  margin-left: 10vw;
+  margin-right: 30vw
+}
+
+.achtergrond {
+  width: 100px;
+  position: absolute;
+}
+
+#a1 {
+  top: 50px;
+  left: 250px
+}
+
+#a2 {
+  width: 72px;
+  top: 250px;
+  left: 30px
+}
+
+
+
+.tekst {
+  text-align: right;
+  margin-right: 10vw;
+  margin-left: 20vw;
+  margin-top: 10vh;
+}
+
+.tekst p {
+  margin-left: 10vw;
+}
+
+.tekst h2 {
+  margin-left: 10vw;
+}
+
+.tekst1 {
+  text-align: left;
+  margin-right: 30vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+
+
+
+
+
+
 
 p {
   font-family: "loos-normal", sans-serif;
@@ -49,9 +124,7 @@ h1 {
   font-family: "loos-wide", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 70px;
-  margin-left: 10vw;
-  margin-bottom: 0px;
+  font-size: 30px;
 color: #89B56B;
 }
 
@@ -59,22 +132,55 @@ h2 {
   font-family: "loos-wide", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2rem
+  font-size: 20px;
 }
 
 h3 {
   font-family: "loos-wide", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem
+  font-size: 15px;
+}
+
+figcaption :nth-child(2) {
+  font-family: "loos-normal", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 12px;
+
+
+}
+
+
+figcaption :nth-child(3) {
+  font-family: "loos-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  opacity: 70%;
+
+
+}
+
+a {
+  text-decoration: none;
 }
 
 
 
 
+
 .heading p {
-  margin-right: 360px;
+  margin-right: 100px;
   margin-left: 10vw;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.heading h1 {
+  margin-left: 10vw;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 
@@ -92,18 +198,17 @@ ul{
 }
 
 li img {
-  width: 50px;
+  width: 20px;
 }
 .imgm1{
-  height: 2em;
-  margin-top: 100px;
+  height: 1em;
 }
 .imgm2{
-  height: 2em;
+  height: 1em;
    animation: opacity 2s linear infinite;
 }
 .imgm3{
-  height: 2em;
+  height: 1em;
    animation: opacity1 2s linear infinite;
 }
 @keyframes opacity{
@@ -126,7 +231,6 @@ li img {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 padding-top: 3vh;
 padding-bottom: 3vh;
 padding-left: 3vh;
@@ -134,25 +238,176 @@ padding-right: 3vh;
 margin-top: 5vh;
 margin-left: 5vh;
 margin-right: 5vh;
+margin-bottom: 10vh;
 }
 
 .wit {
   background-image: linear-gradient(104deg, #dedede, #f7f7f7);
-  width: 100vw;
-  height: 50vh;
+  width: 375px;
+  height: 100vh;
   margin-top: 10vh;
   z-index: -10;
   position: absolute;
+  justify-content: space-evenly;
+  left: 0px;
 }
+
+
 
 
 figure {
   background-color:#2e4337;
-  width: 100px;
-  height: 100px;
+width: 70vw;
+  height: 30vh;
   z-index: 10;
+  display: flex;
+  border-radius: 24px;
+  margin-top: 3vh;
+margin: 40px 20px 40px 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
+figure img {
+  width: 50%;
+  height: 20vh;
+  margin-top: 5vh;
+  position: relative;
+  right: 10%;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin: 10px;
+}
+
+figcaption img {
+  height: 10px;
+  left: 0px;
+  margin: 0px;
+}
+
+figure section {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+strong {
+  color: #5DAA68;
+}
+
+
+.footer2 {
+  background-color: #333;
+  color: #fff;
+  height: 40vh;
+  bottom: 0;
+  width: 100%;
+  margin-top: 120vh;
+}
+
+.review {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 3vw;
+  background-color: whitesmoke;
+  padding: 1vh;
+  border-radius: 12px;
+
+  width: 290px;
+  height: 200px;
+
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.02),
+  0px 0px 5.3px rgba(0, 0, 0, 0.028),
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 17.9px rgba(0, 0, 0, 0.042),
+  0px 0px 33.4px rgba(0, 0, 0, 0.05),
+  0px 0px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.pfp {
+  margin-right: 10px; 
+  border-radius: 12px; 
+  width: 30px;
+
+}
+
+.reviewtekst {
+  width: 209px;
+}
+
+.review h2 {
+  width: 160px;
+  margin: 1vh;
+  margin-top: 0px;
+  color: black;
+}
+
+.review p {
+  width: 300px;
+  font-size: 12px;
+  margin: 1vh;
+  color: black;
+}
+
+
+
+section img {
+  width: 100px;
+  margin: 1vh;
+}
+
+#een {
+  transform: rotate(-5deg);
+
+}
+
+#twee {
+  transform: rotate(10deg);
+margin-left: 50px;
+position: absolute;
+top: 320px
+}
+
+#drie {
+  transform: rotate(-5deg);
+  margin-left: 0px;
+  position: absolute;
+  top: 500px
+}
+
+#vier {
+  transform: rotate(12deg);
+  margin-left: 50px;
+  position: absolute;
+  top: 700px
+}
+
+#vijf {
+  transform: rotate(-8deg);
+  margin-left: 50px;
+  position: absolute;
+  top: 900px
+}
+
+
+time {
+  color: black;
+}
 
 
 
