@@ -292,6 +292,8 @@ figure img {
 
 figcaption {
   margin: 10px;
+  text-align: left;
+  margin-left: 0px;
 }
 
 figcaption img {
